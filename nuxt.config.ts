@@ -13,5 +13,5 @@ export default defineNuxtConfig({
   //     'composables/**'
   //   ]
   // },
-  modules: ['@pinia/nuxt', '@unocss/nuxt']
+  modules: ['@pinia/nuxt', '@unocss/nuxt', '@nuxt/icon']
 })
