@@ -2,6 +2,20 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+  runtimeConfig: {
+    baseURL: process.env.BASE_URL
+  },
+  // css: ["assets/css/global.scss"],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/css/global.scss" as *;',
+        },
+      },
+    },
+  },
+
   //自定义自动导入模块
   // imports: {
   //   dirs: [

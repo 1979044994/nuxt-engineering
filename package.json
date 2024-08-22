@@ -4,13 +4,16 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --mode development",
+    "dev:prod": "nuxt dev --mode production",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.4",
     "nuxt": "^3.12.4",
+    "sass": "^1.77.8",
     "unocss": "^0.62.2",
     "vue": "latest"
   },
