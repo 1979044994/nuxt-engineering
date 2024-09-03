@@ -1,14 +1,13 @@
 <template>
+  <header></header>
   <div>
     content {{ route.query.id }}
+    age{{ route.query.age }}
   </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  title: 'content',
-  layout: 'none'
-})
+
 const route = useRoute()
 </script>
 

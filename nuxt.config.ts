@@ -3,7 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   runtimeConfig: {
-    baseURL: process.env.BASE_URL
+    public: {
+    apiBase: process.env.API_BASE
+    }
+
   },
   // css: ["assets/css/global.scss"],
   vite: {
