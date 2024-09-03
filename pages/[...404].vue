@@ -1,14 +1,12 @@
 <template>
   <div>
-error
+    error
   </div>
 </template>
 
 <script setup lang="ts">
-console.log(a);
+
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

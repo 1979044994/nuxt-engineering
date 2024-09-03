@@ -3,13 +3,16 @@
     <div>index</div>
     <nuxt-link to="/details/2">details</nuxt-link>
     <nuxt-link to="/content?id=2">content</nuxt-link>
-    <div class="info">test</div>
+    <div @click="handleRouter" class="info">test</div>
     <p>2222222</p>
   </div>
 </template>
 
 <script lang="ts" setup>
-
+const router = useRouter()
+const handleRouter = () => {
+  router.push('/content')
+}
 const runtimeConfig = useRuntimeConfig()
 const appConfig = useAppConfig()
 
