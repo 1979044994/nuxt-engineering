@@ -3,10 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   runtimeConfig: {
+    secretKey: 11111111,
     public: {
-    apiBase: process.env.API_BASE
+      apiBase: process.env.NUXT_PUBLIC_API_BASE
     }
-
   },
   // css: ["assets/css/global.scss"],
   vite: {
@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     },
   },
 
+
   //自定义自动导入模块
   // imports: {
   //   dirs: [
@@ -30,5 +31,21 @@ export default defineNuxtConfig({
   //     'composables/**'
   //   ]
   // },
-  modules: ['@pinia/nuxt', '@unocss/nuxt', '@nuxt/icon']
+  modules: [
+    '@pinia/nuxt',
+    '@nuxt/icon',
+    'shadcn-nuxt',
+    '@nuxtjs/tailwindcss'
+  ],
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui'
+  },
 })
