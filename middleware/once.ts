@@ -1,5 +1,4 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  console.log(1111);
 
   // // 假设存储 token 的地方
   // const token = useCookie('token');
