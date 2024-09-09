@@ -1,3 +1,6 @@
+let count = 1;
 export default defineEventHandler(async (event) => {
-  return { name: '小李', age: 18 }
-})
+  count++;
+  console.log(`count=${count}`);
+  return { name: '小李', age: 18 };
+});
