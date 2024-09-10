@@ -10,7 +10,7 @@
     <div class="cursor-pointer" @click="handleMoreRoutePathQ">更多内容路径参query</div>
     <div class="cursor-pointer" @click="handleMoreRouteName('content')">更多内容name content</div>
     <div class="cursor-pointer" @click="handleMoreRouteName('more')">更多内容name</div>
-
+    <div class="cursor-pointer h-20 w-80 bg-teal-500" @click="handleMoreRouteName('request')"> 去请求</div>
   </div>
 </template>
 
