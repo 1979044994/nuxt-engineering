@@ -19,6 +19,8 @@
 definePageMeta({
   title: "index",
 })
+console.log(11111111111);
+
 const router = useRouter();
 console.log(useState('username').value);
 
