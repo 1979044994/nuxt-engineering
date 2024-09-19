@@ -53,6 +53,6 @@ export default defineNuxtConfig({
     componentDir: './components/ui'
   },
   imports: {
-    dirs: ['store']
+    dirs: ['constent']
   },
 })

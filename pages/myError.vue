@@ -1,6 +1,6 @@
 <template>
   <div>
-error
+    error
   </div>
 </template>
 
