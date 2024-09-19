@@ -4,6 +4,7 @@
     <div class="mt-2">{{ counterRef }}</div>
     <Button class="w-20" @click="handleAdd">+</Button>
     <Button class="w-20" @click="handleSub">-</Button>
+    <Button class="w-20" @click="handleSetCookie">setCookie</Button>
   </div>
 </template>
 
@@ -18,6 +19,15 @@ const handleSub = () => {
   count.value--;
   counterRef.value--;
 };
+const test = useCookie('test', {
+  default: () => (0),
+  watch: true
+})
+const handleSetCookie = () => {
+  console.log(test.value)
+  test.value++;
+
+}
 </script>
 
 <style lang="scss" scoped>
