@@ -20,6 +20,7 @@ definePageMeta({
   title: "index",
 })
 const router = useRouter();
+console.log(useState('username').value);
 
 
 const handleRouterPush = () => {

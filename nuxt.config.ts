@@ -35,8 +35,12 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/icon',
     'shadcn-nuxt',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'pinia-plugin-persistedstate',
   ],
+  build: {
+    transpile: ['pinia-plugin-persistedstate']
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -47,5 +51,8 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
+  },
+  imports: {
+    dirs: ['store']
   },
 })
