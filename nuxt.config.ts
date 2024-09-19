@@ -18,6 +18,17 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    head: {
+      title: 'My Nuxt Application',
+      meta: [
+        {
+          charset: 'utf-8',
+        },
+      ],
+    },
+  },
+
 
 
   //自定义自动导入模块
@@ -37,6 +48,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxtjs/tailwindcss',
     'pinia-plugin-persistedstate',
+    "@nuxt/image"
   ],
   build: {
     transpile: ['pinia-plugin-persistedstate']
