@@ -1,4 +1,7 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
   "css.customData": [
     ".vscode/tailwindcss.json"
   ],

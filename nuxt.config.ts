@@ -48,6 +48,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxtjs/tailwindcss',
     'pinia-plugin-persistedstate',
+    '@nuxt/eslint',
     "@nuxt/image"
   ],
   build: {

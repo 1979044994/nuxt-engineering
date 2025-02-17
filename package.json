@@ -24,8 +24,11 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^1.0.1",
+    "@nuxt/eslint-config": "^1.0.1",
     "@nuxt/icon": "^1.4.7",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "eslint": "^9.20.1",
     "pinia-plugin-persistedstate": "^4.0.1",
     "shadcn-nuxt": "^0.10.4",
     "typescript": "^5.5.4"
